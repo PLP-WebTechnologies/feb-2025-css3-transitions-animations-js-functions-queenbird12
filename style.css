@@ -1,0 +1,48 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Button base styles */
+#animateBtn {
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: blue; /* default */
+  transition: background-color 0.3s ease;
+}
+
+/* Button color themes */
+.blue-theme {
+  background-color: blue;
+}
+
+.green-theme {
+  background-color: green;
+}
+
+.purple-theme {
+  background-color: purple;
+}
+
+/* Smooth hover transition */
+#animateBtn:hover {
+  background-color: darkorange;
+  transition: background-color 0.5s ease;
+}
+
+/* CSS animation keyframes for shake effect */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-10px); }
+  40%, 80% { transform: translateX(10px); }
+}
+
+/* Animation class to trigger shake */
+.shake {
+  animation: shake 0.5s;
+}
